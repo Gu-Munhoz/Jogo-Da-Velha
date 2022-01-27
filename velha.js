@@ -115,3 +115,17 @@ function checaSequencia(quadrado1, quadrado2, quadrado3){
 
     return eigual;
 }
+
+function reiniciar(){
+    vencedor = null;
+    VencedorSelecionado.innerHTML = '';
+
+    for(var i = 1; i<= 9; i++){
+        var quadrado = document.getElementById(i);
+        quadrado.style.background = "rgb(214, 213, 213)";
+        quadrado.style.color = "rgb(214, 213, 213)";
+        quadrado.innerHTML = "-";
+    }
+
+    mudarJogador("X");
+}
